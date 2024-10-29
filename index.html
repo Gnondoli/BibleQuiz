@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Biblique du Nouveau Testament</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question</h2>
+            <ul>
+                <li><button class="answer" onclick="selectAnswer(0)">Réponse 1</button></li>
+                <li><button class="answer" onclick="selectAnswer(1)">Réponse 2</button></li>
+                <li><button class="answer" onclick="selectAnswer(2)">Réponse 3</button></li>
+                <li><button class="answer" onclick="selectAnswer(3)">Réponse 4</button></li>
+            </ul>
+        </div>
+        <button id="submit" onclick="submitAnswer()">Valider</button>
+        <div class="score-container" id="score"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
